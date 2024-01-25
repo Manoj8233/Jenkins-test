@@ -26,5 +26,15 @@ pipeline {
                 echo 'deploying'
             }
         }
+         stage('artifact') { 
+            steps {
+                echo 'artifactory'
+            }
+        }
+          stage('Deploy') { 
+            steps {
+                echo 'deploying'
+            }
+        }
     }
 }
