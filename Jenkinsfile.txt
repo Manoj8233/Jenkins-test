@@ -11,7 +11,17 @@ pipeline {
                 echo 'testing'
             }
         }
-        stage('Deploy') { 
+        stage('scan') { 
+            steps {
+                echo 'scanning'
+            }
+        }
+         stage('artifact') { 
+            steps {
+                echo 'artifactory'
+            }
+        }
+          stage('Deploy') { 
             steps {
                 echo 'deploying'
             }
